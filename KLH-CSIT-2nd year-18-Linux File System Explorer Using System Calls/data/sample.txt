@@ -1,0 +1,2 @@
+This is a test file for the Linux File System Explorer project.
+The file is used to test file creation, writing, reading, and file information.

@@ -1,0 +1,217 @@
+LINUX FILE SYSTEM EXPLORER
+TEST CASES AND RESULTS
+
+Project:
+Linux File System Explorer Using System Calls
+
+--------------------------------------------------
+
+TC01 - Show Current Directory
+Operation:
+Select option 1.
+
+Expected Result:
+The program displays the current working directory.
+
+System Call/API:
+getcwd()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC02 - List Files and Directories
+Operation:
+Select option 2.
+
+Expected Result:
+The program displays files and directories in the current directory.
+
+System Call/API:
+opendir(), readdir(), closedir()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC03 - Create a File
+Operation:
+Select option 3 and enter a filename.
+
+Expected Result:
+A new file is created successfully.
+
+System Call/API:
+open(), close()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC04 - Write to a File
+Operation:
+Select option 4 and enter filename and content.
+
+Expected Result:
+The specified content is written to the file.
+
+System Call/API:
+open(), write(), close()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC05 - Read a File
+Operation:
+Select option 5 and enter an existing filename.
+
+Expected Result:
+The file content is displayed.
+
+System Call/API:
+open(), read(), close()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC06 - Delete a File
+Operation:
+Select option 6 and enter an existing filename.
+
+Expected Result:
+The specified file is deleted.
+
+System Call/API:
+unlink()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC07 - Rename a File
+Operation:
+Select option 7 and enter the old and new filenames.
+
+Expected Result:
+The file is renamed successfully.
+
+System Call/API:
+rename()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC08 - Display File Information
+Operation:
+Select option 8 and enter an existing filename.
+
+Expected Result:
+File size, owner ID, group ID, permissions, and modification information are displayed.
+
+System Call/API:
+stat()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC09 - Create a Directory
+Operation:
+Select option 9 and enter a directory name.
+
+Expected Result:
+A new directory is created successfully.
+
+System Call/API:
+mkdir()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC10 - Remove a Directory
+Operation:
+Select option 10 and enter an empty directory name.
+
+Expected Result:
+The directory is removed successfully.
+
+System Call/API:
+rmdir()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC11 - Change Directory
+Operation:
+Select option 11 and enter a valid directory name.
+
+Expected Result:
+The current working directory changes successfully.
+
+System Call/API:
+chdir()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC12 - Recursive File Search
+Operation:
+Select option 12 and enter a filename.
+
+Expected Result:
+The program searches the current directory and subdirectories and displays matching file paths.
+
+System Call/API:
+opendir(), readdir(), stat(), closedir()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC13 - Invalid File
+Operation:
+Enter a filename that does not exist.
+
+Expected Result:
+The program displays an appropriate error message.
+
+Error Handling:
+perror()
+
+Status:
+PASS
+
+--------------------------------------------------
+
+TC14 - Invalid Directory
+Operation:
+Enter a directory that does not exist.
+
+Expected Result:
+The program displays an appropriate error message.
+
+Error Handling:
+perror()
+
+Status:
+PASS
+
+--------------------------------------------------

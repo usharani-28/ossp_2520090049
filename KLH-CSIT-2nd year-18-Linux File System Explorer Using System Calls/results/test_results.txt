@@ -1,0 +1,189 @@
+LINUX FILE SYSTEM EXPLORER
+ACTUAL TEST RESULTS
+
+Project:
+Linux File System Explorer Using System Calls
+
+--------------------------------------------------
+
+TC01 - Show Current Directory
+Observed Result:
+Current directory displayed successfully.
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC02 - List Files and Directories
+Observed Result:
+Files and directories were displayed successfully, including:
+sample.txt
+test_data.txt
+test_directory
+test_files
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC03 - Create a File
+Observed Result:
+File 'ossp_test.txt' created successfully.
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC04 - Write to a File
+Observed Result:
+Content written successfully to ossp_test.txt.
+
+Test Content:
+Linux File System Explorer Test
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC05 - Read a File
+Observed Result:
+File content displayed successfully.
+
+Displayed Content:
+Linux File System Explorer Test
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC06 - Delete a File
+Observed Result:
+File 'ossp_renamed.txt' deleted successfully.
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC07 - Rename a File
+Observed Result:
+File 'ossp_test.txt' renamed to 'ossp_renamed.txt'
+successfully.
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC08 - Show File Information
+Observed Result:
+File information displayed successfully.
+
+File:
+sample.txt
+
+Displayed Information:
+File Size       : 144 bytes
+Owner ID        : 0
+Group ID        : 0
+Permissions     : 777
+Last Modified   : 1790139445
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC09 - Create a Directory
+Observed Result:
+Directory 'temp_dir' created successfully.
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC10 - Remove a Directory
+Observed Result:
+Directory 'temp_dir' removed successfully.
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC11 - Change Directory
+Observed Result:
+Successfully changed to test_directory.
+
+Current Directory:
+.../data/test_directory
+
+The program was then successfully returned to the
+parent directory using '..'.
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC12 - Recursive File Search
+Observed Result:
+The program successfully searched subdirectories.
+
+File found:
+./test_directory/nested.txt
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC13 - Invalid File
+Operation:
+Attempted to read missing.txt.
+
+Observed Result:
+open: No such file or directory
+
+Result:
+PASS
+
+--------------------------------------------------
+
+TC14 - Invalid Directory
+Operation:
+Attempted to change directory to missing_directory.
+
+Observed Result:
+chdir: No such file or directory
+
+Result:
+PASS
+
+--------------------------------------------------
+
+OVERALL RESULT
+
+Total Test Cases: 14
+Passed: 14
+Failed: 0
+
+Overall Status:
+PASS
+
+--------------------------------------------------
+
+Conclusion:
+
+The Linux File System Explorer was tested using actual
+program execution. All 14 test cases passed successfully.
+The project correctly performs file operations, directory
+operations, recursive file searching, file information
+retrieval, and error handling using Linux/POSIX system
+calls and APIs.
